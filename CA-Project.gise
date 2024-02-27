@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="CA-Project.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALU.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="ALU.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="ALU.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="BancoRegistos.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="BancoRegistos.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="BancoRegistos.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MUX_PC.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="MUX_PC.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="MUX_PC.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MUX_R.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="MUX_R.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="MUX_R.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MemoriaInstrucoes.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="MemoriaInstrucoes.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="MemoriaInstrucoes.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PC.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="PC.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="PC.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PerifericoEntrada.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="PerifericoEntrada.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="PerifericoEntrada.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PerifericoSaida.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="PerifericoSaida.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="PerifericoSaida.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="RAM.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="RAM.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="RAM.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ROM.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="ROM.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="ROM.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="RegistoFlags.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="RegistoFlags.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="RegistoFlags.xst"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+
+</generated_project>
