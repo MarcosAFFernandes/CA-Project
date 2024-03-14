@@ -22,43 +22,339 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="CA-Project.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALU.prj"/>
-    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="ALU.stx"/>
-    <file xil_pn:fileType="FILE_XST" xil_pn:name="ALU.xst"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="BancoRegistos.prj"/>
-    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="BancoRegistos.stx"/>
-    <file xil_pn:fileType="FILE_XST" xil_pn:name="BancoRegistos.xst"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MUX_PC.prj"/>
-    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="MUX_PC.stx"/>
-    <file xil_pn:fileType="FILE_XST" xil_pn:name="MUX_PC.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MUX_R.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="MUX_R.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="MUX_R.xst"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MemoriaInstrucoes.prj"/>
-    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="MemoriaInstrucoes.stx"/>
-    <file xil_pn:fileType="FILE_XST" xil_pn:name="MemoriaInstrucoes.xst"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PC.prj"/>
-    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="PC.stx"/>
-    <file xil_pn:fileType="FILE_XST" xil_pn:name="PC.xst"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PerifericoEntrada.prj"/>
-    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="PerifericoEntrada.stx"/>
-    <file xil_pn:fileType="FILE_XST" xil_pn:name="PerifericoEntrada.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="MUX_R_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MUX_R_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="MemoriaInstrucoes.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="MemoriaInstrucoes.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="PerifericoEntrada.ngr"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="PerifericoEntrada_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PerifericoEntrada_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PerifericoSaida.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="PerifericoSaida.spl"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="PerifericoSaida.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="PerifericoSaida.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="PerifericoSaida.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="PerifericoSaida_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PerifericoSaida_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="PlacaMae.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="PlacaMae.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="PlacaMae.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="PlacaMae.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="PlacaMae.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="PlacaMae.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="PlacaMae.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="PlacaMae.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="PlacaMae.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="PlacaMae.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PlacaMae.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="PlacaMae.ptwx"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="PlacaMae.spl"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="PlacaMae.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="PlacaMae.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="PlacaMae.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="PlacaMae.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="PlacaMae.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="PlacaMae.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="PlacaMae.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="PlacaMae.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="PlacaMae.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="PlacaMae_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="PlacaMae_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="PlacaMae_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="PlacaMae_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="PlacaMae_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="PlacaMae_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="PlacaMae_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="PlacaMae_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="PlacaMae_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="PlacaMae_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="PlacaMae_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="PlacaMae_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="PlacaMae_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="PlacaMae_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PlacaMae_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="PlacaMae_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Processador.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Processador.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Processador.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Processador.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Processador.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="Processador.spl"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Processador.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Processador.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Processador.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Processador.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Processador_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Processador_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Processador_xst.xrpt"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="RAM.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="RAM.spl"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="RAM.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="RAM.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="RAM.xst"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ROM.prj"/>
-    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="ROM.stx"/>
-    <file xil_pn:fileType="FILE_XST" xil_pn:name="ROM.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="RAM_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="RegistoFlags.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="RegistoFlags.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="RegistoFlags.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TestePlacaMae_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TestePlacaMae_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="TestePlacaMae_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TestePlacaMae_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
+    <file xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/PerifericoEntrada_synthesis.nlf"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="netgen/synthesis/PerifericoEntrada_synthesis.v"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="placamae.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="placamae.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="placamae.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_1"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_2"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_3"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testMemInst_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testPlacaMae_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testPlacaMae_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="testPlacaMae_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testPlacaMae_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testRAM_isim_beh.exe"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testRegFlag_isim_beh.exe"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testeALU_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testeBancoReg_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testeBancoReg_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="testeBancoReg_isim_beh.wdb"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testeMuxPC_isim_beh.exe"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testeMuxR_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testeMuxR_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testePC_isim_beh.exe"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testePerIN_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testePerIN_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testePerOut_isim_beh.exe"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testeROM_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1710418233" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1710418233">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1710429385" xil_pn:in_ck="-2936846929278111275" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1710429385">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ALU.vhd"/>
+      <outfile xil_pn:name="BancoRegistos.vhd"/>
+      <outfile xil_pn:name="MUX_PC.vhd"/>
+      <outfile xil_pn:name="MUX_R.vhd"/>
+      <outfile xil_pn:name="MemoriaInstrucoes.vhd"/>
+      <outfile xil_pn:name="PC.vhd"/>
+      <outfile xil_pn:name="PerifericoEntrada.vhd"/>
+      <outfile xil_pn:name="PerifericoSaida.vhd"/>
+      <outfile xil_pn:name="PlacaMae.vhd"/>
+      <outfile xil_pn:name="Processador.vhd"/>
+      <outfile xil_pn:name="RAM.vhd"/>
+      <outfile xil_pn:name="ROM.vhd"/>
+      <outfile xil_pn:name="RegistoFlags.vhd"/>
+      <outfile xil_pn:name="testMemInst.vhd"/>
+      <outfile xil_pn:name="testPlacaMae.vhd"/>
+      <outfile xil_pn:name="testRAM.vhd"/>
+      <outfile xil_pn:name="testRegFlag.vhd"/>
+      <outfile xil_pn:name="testeALU.vhd"/>
+      <outfile xil_pn:name="testeBancoReg.vhd"/>
+      <outfile xil_pn:name="testeMuxPC.vhd"/>
+      <outfile xil_pn:name="testeMuxR.vhd"/>
+      <outfile xil_pn:name="testePC.vhd"/>
+      <outfile xil_pn:name="testePerIN.vhd"/>
+      <outfile xil_pn:name="testePerOut.vhd"/>
+      <outfile xil_pn:name="testeROM.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1710418233" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="2929015582269355459" xil_pn:start_ts="1710418233">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1710418233" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="7786180589174967237" xil_pn:start_ts="1710418233">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1710418233" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-1743873495803414329" xil_pn:start_ts="1710418233">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1710429385" xil_pn:in_ck="-2936846929278111275" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1710429385">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ALU.vhd"/>
+      <outfile xil_pn:name="BancoRegistos.vhd"/>
+      <outfile xil_pn:name="MUX_PC.vhd"/>
+      <outfile xil_pn:name="MUX_R.vhd"/>
+      <outfile xil_pn:name="MemoriaInstrucoes.vhd"/>
+      <outfile xil_pn:name="PC.vhd"/>
+      <outfile xil_pn:name="PerifericoEntrada.vhd"/>
+      <outfile xil_pn:name="PerifericoSaida.vhd"/>
+      <outfile xil_pn:name="PlacaMae.vhd"/>
+      <outfile xil_pn:name="Processador.vhd"/>
+      <outfile xil_pn:name="RAM.vhd"/>
+      <outfile xil_pn:name="ROM.vhd"/>
+      <outfile xil_pn:name="RegistoFlags.vhd"/>
+      <outfile xil_pn:name="testMemInst.vhd"/>
+      <outfile xil_pn:name="testPlacaMae.vhd"/>
+      <outfile xil_pn:name="testRAM.vhd"/>
+      <outfile xil_pn:name="testRegFlag.vhd"/>
+      <outfile xil_pn:name="testeALU.vhd"/>
+      <outfile xil_pn:name="testeBancoReg.vhd"/>
+      <outfile xil_pn:name="testeMuxPC.vhd"/>
+      <outfile xil_pn:name="testeMuxR.vhd"/>
+      <outfile xil_pn:name="testePC.vhd"/>
+      <outfile xil_pn:name="testePerIN.vhd"/>
+      <outfile xil_pn:name="testePerOut.vhd"/>
+      <outfile xil_pn:name="testeROM.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1710429388" xil_pn:in_ck="-2936846929278111275" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7388035134491815153" xil_pn:start_ts="1710429385">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="testPlacaMae_beh.prj"/>
+      <outfile xil_pn:name="testPlacaMae_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1710429388" xil_pn:in_ck="969617094533924287" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2681220704902245692" xil_pn:start_ts="1710429388">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="testPlacaMae_isim_beh.wdb"/>
+    </transform>
+    <transform xil_pn:end_ts="1710416070" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1710416070">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1710416070" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="4530826790025518170" xil_pn:start_ts="1710416070">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1710416070" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-1743873495803414329" xil_pn:start_ts="1710416070">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1710416070" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1710416070">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1710416070" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-803984370687262440" xil_pn:start_ts="1710416070">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1710416351" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1710416351">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1710416351" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="457073275597793873" xil_pn:start_ts="1710416351">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1710417737" xil_pn:in_ck="7615824577388649450" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-2088152830275707267" xil_pn:start_ts="1710417724">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="PerifericoEntrada.ngr"/>
+      <outfile xil_pn:name="PlacaMae.lso"/>
+      <outfile xil_pn:name="PlacaMae.ngc"/>
+      <outfile xil_pn:name="PlacaMae.ngr"/>
+      <outfile xil_pn:name="PlacaMae.prj"/>
+      <outfile xil_pn:name="PlacaMae.stx"/>
+      <outfile xil_pn:name="PlacaMae.syr"/>
+      <outfile xil_pn:name="PlacaMae.xst"/>
+      <outfile xil_pn:name="PlacaMae_vhdl.prj"/>
+      <outfile xil_pn:name="PlacaMae_xst.xrpt"/>
+      <outfile xil_pn:name="Processador.ngr"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1710417890" xil_pn:in_ck="4213424437296598560" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-1586309145789704908" xil_pn:start_ts="1710417890">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1710417896" xil_pn:in_ck="8012736946809807621" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="7024879063107148244" xil_pn:start_ts="1710417890">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="PlacaMae.bld"/>
+      <outfile xil_pn:name="PlacaMae.ngd"/>
+      <outfile xil_pn:name="PlacaMae_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1710417902" xil_pn:in_ck="6739335432443273083" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-5849673150125579957" xil_pn:start_ts="1710417896">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="PlacaMae.pcf"/>
+      <outfile xil_pn:name="PlacaMae_map.map"/>
+      <outfile xil_pn:name="PlacaMae_map.mrp"/>
+      <outfile xil_pn:name="PlacaMae_map.ncd"/>
+      <outfile xil_pn:name="PlacaMae_map.ngm"/>
+      <outfile xil_pn:name="PlacaMae_map.xrpt"/>
+      <outfile xil_pn:name="PlacaMae_summary.xml"/>
+      <outfile xil_pn:name="PlacaMae_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1710417923" xil_pn:in_ck="-6106335019940772972" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-3872219738485705569" xil_pn:start_ts="1710417902">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="PlacaMae.ncd"/>
+      <outfile xil_pn:name="PlacaMae.pad"/>
+      <outfile xil_pn:name="PlacaMae.par"/>
+      <outfile xil_pn:name="PlacaMae.ptwx"/>
+      <outfile xil_pn:name="PlacaMae.unroutes"/>
+      <outfile xil_pn:name="PlacaMae.xpi"/>
+      <outfile xil_pn:name="PlacaMae_pad.csv"/>
+      <outfile xil_pn:name="PlacaMae_pad.txt"/>
+      <outfile xil_pn:name="PlacaMae_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1710417931" xil_pn:in_ck="4213424437296590935" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1710417923">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="PlacaMae.ut"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="placamae.bgn"/>
+      <outfile xil_pn:name="placamae.bit"/>
+      <outfile xil_pn:name="placamae.drc"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1710417923" xil_pn:in_ck="7938848343163877623" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1710417919">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="PlacaMae.twr"/>
+      <outfile xil_pn:name="PlacaMae.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+    </transform>
+  </transforms>
 
 </generated_project>

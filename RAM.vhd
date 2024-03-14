@@ -31,19 +31,19 @@ end RAM;
 
 architecture Behavioral of RAM is
 
+type mem_array is array (0 to 255) of STD_LOGIC_VECTOR(7 downto 0);
+signal memoria : mem_array;
+
 begin
 	process (clk, Operando1, WR, Constante)
-	type mem_array is array (0 to 255) of STD_LOGIC_VECTOR(7 downto 0);
-	variable memoria : mem_array;
-	
 	begin
 		if rising_edge(clk) then
 			if WR = '1' then 
-				memoria(TO_INTEGER(unsigned(Constante))) := Operando1;
-			else
-				Dados_M <= memoria(TO_INTEGER(unsigned(Constante)));
+				memoria(TO_INTEGER(unsigned(Constante))) <= Operando1;
 			end if;
 		end if;
+		
+		Dados_M <= memoria(TO_INTEGER(unsigned(Constante)));
+		
 	end process;
-
 end Behavioral;

@@ -1,0 +1,7 @@
+[Inputs]
+ESCR_P
+clk
+=Operando1[7:0]=
+[Outputs]
+=POUT[7:0]=
+[BiDir]

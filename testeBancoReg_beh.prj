@@ -1,0 +1,2 @@
+vhdl work "BancoRegistos.vhd"
+vhdl work "testeBancoReg.vhd"

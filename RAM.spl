@@ -1,0 +1,8 @@
+[Inputs]
+clk
+WR
+=Operando1[7:0]=
+=Constante[7:0]=
+[Outputs]
+=Dados_M[7:0]=
+[BiDir]

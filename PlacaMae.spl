@@ -1,0 +1,7 @@
+[Inputs]
+reset
+clock
+=PIN[7:0]=
+[Outputs]
+=POUT[7:0]=
+[BiDir]

@@ -32,22 +32,31 @@ architecture Behavioral of RegistoFlags is
 
 begin
 	process(E_FLAGS, ESCR_R, SEL_FLAG, clk)
+	
+	variable registo: STD_LOGIC_VECTOR (4 downto 0);
+	
 	begin
 		if rising_edge(clk) then
 			if ESCR_R(1) = '1' then
-				if SEL_FLAG = "000" then
-					S_FLAG <= E_FLAGS(0);
-				elsif SEL_FLAG = "001" then
-					S_FLAG <= E_FLAGS(1);
-				elsif SEL_FLAG = "010" then
-					S_FLAG <= E_FLAGS(2);
-				elsif SEL_FLAG = "011" then
-					S_FLAG <= E_FLAGS(3);
-				elsif SEL_FLAG = "100" then
-					S_FLAG <= E_FLAGS(4);
-				end if;
+				registo := E_FLAGS;
 			end if;
 		end if;
+		
+		case SEL_FLAG is
+			when "000" =>
+				S_FLAG <= registo(0);
+			when "001" =>
+				S_FLAG <= registo(1);
+			when "010" =>
+				S_FLAG <= registo(2);
+			when "011" =>
+				S_FLAG <= registo(3);
+			when "100" =>
+				S_FLAG <= registo(4);
+			when others =>
+				S_FLAG <= 'X';
+		end case;
+		
 	end process;
 
 end Behavioral;

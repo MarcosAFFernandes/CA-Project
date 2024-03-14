@@ -1,0 +1,2 @@
+vhdl isim_temp "PerifericoEntrada.vhd"
+vhdl isim_temp "testePerIN.vhd"

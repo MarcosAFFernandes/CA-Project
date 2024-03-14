@@ -1,0 +1,2 @@
+vhdtdtfi -lib work PerifericoSaida.vhd -prj CA-Project -o PerifericoSaida.spl -module PerifericoSaida -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 PerifericoSaida.spl C:/Xilinx/14.7/ISE_DS/ISE/CA-Project/PerifericoSaida.sym 

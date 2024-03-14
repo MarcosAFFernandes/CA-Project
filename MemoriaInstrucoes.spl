@@ -1,0 +1,7 @@
+[Inputs]
+=Endereco[7:0]=
+[Outputs]
+=opcode[4:0]=
+=SEL_R[5:0]=
+=Constante[7:0]=
+[BiDir]

@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Thu Mar 14 11:22:45 2024
+# Process ID: 1056
+# Log file: C:/Xilinx/14.7/ISE_DS/ISE/CA-Project/planAhead_run_1/planAhead.log
+# Journal file: C:/Xilinx/14.7/ISE_DS/ISE/CA-Project/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Xilinx/14.7/ISE_DS/ISE/CA-Project/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property iostandard LVCMOS18 [get_ports [list {PIN[7]} {PIN[6]} {PIN[5]} {PIN[4]} {PIN[3]} {PIN[2]} {PIN[1]} {PIN[0]}]]
+startgroup
+set_property package_pin R17 [get_ports {PIN[7]}]
+endgroup
+startgroup
+set_property package_pin N17 [get_ports {PIN[6]}]
+endgroup
+startgroup
+set_property package_pin L13 [get_ports {PIN[5]}]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports {PIN[4]}]
+endgroup
+startgroup
+set_property package_pin K17 [get_ports {PIN[3]}]
+endgroup
+startgroup
+set_property package_pin K18 [get_ports {PIN[2]}]
+endgroup
+startgroup
+set_property package_pin G18 [get_ports {PIN[0]}]
+endgroup

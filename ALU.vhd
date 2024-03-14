@@ -41,44 +41,26 @@ begin
 		elsif SEL_ALU = "0010" then
 			Resultado <= (Operando1 AND Operando2);
 		elsif SEL_ALU = "0011" then
-			Resultado <= (Operando1 NAND Operando2);
+			Resultado <= NOT(Operando1 AND Operando2);
 		elsif SEL_ALU = "0100" then
 			Resultado <= (Operando1 OR Operando2);
 		elsif SEL_ALU = "0101" then
-			Resultado <= (Operando1 NOR Operando2);
+			Resultado <= NOT(Operando1 OR Operando2);
 		elsif SEL_ALU = "0110" then
 			Resultado <= (Operando1 XOR Operando2);
 		elsif SEL_ALU = "0111" then
-			Resultado <= (Operando1 XNOR Operando2);
+			Resultado <= NOT(Operando1 XOR Operando2);
 		elsif SEL_ALU = "1000" then
 			if (Operando1 < Operando2) then 
-				E_FLAG(0) <= '1';
-			else
-				E_FLAG(0) <= '0';
-			end if;
-			
-			if (Operando1 <= Operando2) then 
-				E_FLAG(1) <= '1';
-			else
-				E_FLAG(1) <= '0';
+				E_FLAG <= (0 => '1', 1 => '1', others => '0');
 			end if;
 			
 			if (Operando1 = Operando2) then
-				E_FLAG(2) <= '1';
-			else
-				E_FLAG(2) <= '0';
-			end if;
-			
-			if (Operando1 >= Operando2) then
-				E_FLAG(3) <= '1';
-			else
-				E_FLAG(3) <= '0';
+				E_FLAG <= (1 => '1', 2 => '1', 3 => '1', others => '0');
 			end if;
 
 			if (Operando1 > Operando2) then
-				E_FLAG(4) <= '1';
-			else
-				E_FLAG(4) <= '0';
+				E_FLAG <= (3 => '1', 4 => '1', others => '0');
 			end if;
 		end if;
 	end process;

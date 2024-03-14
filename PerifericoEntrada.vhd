@@ -29,7 +29,6 @@ end PerifericoEntrada;
 architecture Behavioral of PerifericoEntrada is
 
 begin
-
 	process (PIN, ESCR_P)
 	begin
 		if ESCR_P = '0' then

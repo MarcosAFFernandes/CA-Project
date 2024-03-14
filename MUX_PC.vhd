@@ -32,7 +32,7 @@ end MUX_PC;
 architecture Behavioral of MUX_PC is
 
 begin
-	process (S_FLAG, Operando1, SEL_PC)
+	process (S_FLAG, Operando1, SEL_PC, um, zero)
 	begin
 		if SEL_PC = "000" then 
 			ESCR_PC <= zero;

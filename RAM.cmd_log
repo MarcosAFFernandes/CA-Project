@@ -1,0 +1,6 @@
+vhdtdtfi -lib work RAM.vhd -prj CA-Project -o RAM.spl -module RAM -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 RAM.spl C:/Xilinx/14.7/ISE_DS/ISE/CA-Project/RAM.sym 
+vhdtdtfi -lib work RAM.vhd -prj CA-Project -o RAM.spl -module RAM -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 RAM.spl C:/Xilinx/14.7/ISE_DS/ISE/CA-Project/RAM.sym 
+vhdtdtfi -lib work RAM.vhd -prj CA-Project -o RAM.spl -module RAM -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 RAM.spl C:/Xilinx/14.7/ISE_DS/ISE/CA-Project/RAM.sym 

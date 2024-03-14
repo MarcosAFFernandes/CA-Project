@@ -36,29 +36,13 @@ begin
 	process (Dados_R, SEL_R, clk, ESCR_R)
 	type reg_array is array (0 to 7) of STD_LOGIC_VECTOR (7 downto 0);
 	variable registos : reg_array;
-	
 	begin
-	
-		if ESCR_R(0) = '1' then 
-			if rising_edge(clk) then 
-				case SEL_R(2 downto 0) is
-					when "000" =>
-						registos(0) := Dados_R;
-					when "001" =>
-						registos(1) := Dados_R;
-					when "010" =>
-						registos(2) := Dados_R;
-					when "011" =>
-						registos(3) := Dados_R;
-					when "100" =>
-						registos(4) := Dados_R;
-					when "101" =>
-						registos(5) := Dados_R;
-					when "110" =>
-						registos(6) := Dados_R;
-					when "111" =>
-						registos(7) := Dados_R;
-				end case;
+		
+		if ESCR_R(0) = '1' then  
+			if rising_edge(clk) then   
+				
+				registos(TO_INTEGER(unsigned(SEL_R (2 downto 0)))) := Dados_R;
+					
 			end if;
 		end if;
 		

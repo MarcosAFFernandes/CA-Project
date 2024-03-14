@@ -35,16 +35,18 @@ begin
 
 	process (Constante, Dados_M, Dados_IN, Resultado, SEL_Dados)
 	begin
-		if SEL_Dados = "00" then 
-			Dados_R <= Resultado;
-		elsif SEL_Dados = "01" then
-			Dados_R <= Dados_IN;
-		elsif SEL_Dados = "10" then
-			Dados_R <= Dados_M;
-		else
-			Dados_R <= Constante;
-		end if;
-	
+		case SEL_Dados is 
+			when "00" =>
+				Dados_R <= Resultado;
+			when "01" =>
+				Dados_R <= Dados_IN;
+			when "10" =>
+				Dados_R <= Dados_M;
+			when "11" =>
+				Dados_R <= Constante;
+			when others =>
+				Dados_R <= (others => 'X');
+		end case;
 	end process;
 
 end Behavioral;

@@ -1,0 +1,24 @@
+
+
+NET "PIN[7]" LOC = R17;
+NET "PIN[6]" LOC = N17;
+NET "PIN[5]" LOC = L13;
+NET "PIN[4]" LOC = L14;
+NET "PIN[3]" LOC = K17;
+NET "PIN[2]" LOC = K18;
+NET "PIN[1]" LOC = H18;
+NET "PIN[0]" LOC = G18;
+NET "POUT[7]" LOC = R4;
+NET "POUT[6]" LOC = F4;
+NET "POUT[5]" LOC = P15;
+NET "POUT[4]" LOC = E17;
+NET "POUT[3]" LOC = K14;
+NET "POUT[2]" LOC = K15;
+NET "POUT[1]" LOC = J15;
+NET "POUT[0]" LOC = J14;
+NET "reset" LOC = H13;
+
+NET "clock" LOC = B8;
+
+# PlanAhead Generated physical constraints 
+

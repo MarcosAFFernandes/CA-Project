@@ -1,0 +1,15 @@
+[Inputs]
+reset
+clk
+=opcode[4:0]=
+=SEL_R[5:0]=
+=Constante_IN[7:0]=
+=Dados_M[7:0]=
+=PIN[7:0]=
+[Outputs]
+WR
+=Endereco[7:0]=
+=Constante_OUT[7:0]=
+=Operando1[7:0]=
+=POUT[7:0]=
+[BiDir]

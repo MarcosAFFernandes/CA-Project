@@ -1,0 +1,76 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml PerifericoEntrada.twx PerifericoEntrada.ncd -o
+PerifericoEntrada.twr PerifericoEntrada.pcf
+
+Design file:              PerifericoEntrada.ncd
+Physical constraint file: PerifericoEntrada.pcf
+Device,package,speed:     xc7a100t,csg324,C,-3 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock ESCR_P
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+PIN<0>      |   -1.093(R)|      FAST  |    3.298(R)|      SLOW  |ESCR_P_BUFGP      |   0.000|
+PIN<1>      |   -1.085(R)|      FAST  |    3.290(R)|      SLOW  |ESCR_P_BUFGP      |   0.000|
+PIN<2>      |   -1.059(R)|      FAST  |    3.264(R)|      SLOW  |ESCR_P_BUFGP      |   0.000|
+PIN<3>      |   -0.605(R)|      FAST  |    2.457(R)|      SLOW  |ESCR_P_BUFGP      |   0.000|
+PIN<4>      |   -0.514(R)|      FAST  |    2.358(R)|      SLOW  |ESCR_P_BUFGP      |   0.000|
+PIN<5>      |   -0.606(R)|      FAST  |    2.460(R)|      SLOW  |ESCR_P_BUFGP      |   0.000|
+PIN<6>      |   -0.592(R)|      FAST  |    2.447(R)|      SLOW  |ESCR_P_BUFGP      |   0.000|
+PIN<7>      |   -0.585(R)|      FAST  |    2.436(R)|      SLOW  |ESCR_P_BUFGP      |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock ESCR_P to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+Dados_IN<0> |         7.868(R)|      SLOW  |         3.231(R)|      FAST  |ESCR_P_BUFGP      |   0.000|
+Dados_IN<1> |         7.751(R)|      SLOW  |         3.156(R)|      FAST  |ESCR_P_BUFGP      |   0.000|
+Dados_IN<2> |         7.777(R)|      SLOW  |         3.177(R)|      FAST  |ESCR_P_BUFGP      |   0.000|
+Dados_IN<3> |         6.376(R)|      SLOW  |         2.796(R)|      FAST  |ESCR_P_BUFGP      |   0.000|
+Dados_IN<4> |         6.377(R)|      SLOW  |         2.794(R)|      FAST  |ESCR_P_BUFGP      |   0.000|
+Dados_IN<5> |         6.376(R)|      SLOW  |         2.793(R)|      FAST  |ESCR_P_BUFGP      |   0.000|
+Dados_IN<6> |         6.399(R)|      SLOW  |         2.815(R)|      FAST  |ESCR_P_BUFGP      |   0.000|
+Dados_IN<7> |         6.396(R)|      SLOW  |         2.816(R)|      FAST  |ESCR_P_BUFGP      |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+
+Analysis completed Fri Mar 08 13:04:40 2024 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 609 MB
+
+
+

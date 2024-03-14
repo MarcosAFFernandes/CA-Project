@@ -35,18 +35,17 @@ begin
 	process (Reset, clk, ESCR_PC, Constante)
 	variable contagem : STD_LOGIC_VECTOR(7 downto 0) := "00000000";
 	begin
-	
-		if Reset = '1' then
-			contagem := "00000000";
-		elsif rising_edge(clk) then
-			if ESCR_PC = '0' then 
-				contagem := contagem + 1;
+		if rising_edge(clk) then
+			if Reset = '1' then
+				contagem := "00000000";
 			else
-				contagem := Constante;
+				if ESCR_PC = '0' then 
+					contagem := contagem + "00000001";
+				else
+					contagem := Constante;
+				end if;
 			end if;
+			Endereco <= contagem;
 		end if;
-		
-		Endereco <= contagem;
 	end process;
-
 end Behavioral;

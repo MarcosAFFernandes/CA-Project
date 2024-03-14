@@ -1,0 +1,741 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Reading design: Processador.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Processador.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Processador"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : Processador
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Xilinx\14.7\ISE_DS\ISE\CA-Project\ROM.vhd" into library work
+Parsing entity <ROM>.
+Parsing architecture <Behavioral> of entity <rom>.
+Parsing VHDL file "C:\Xilinx\14.7\ISE_DS\ISE\CA-Project\RegistoFlags.vhd" into library work
+Parsing entity <RegistoFlags>.
+Parsing architecture <Behavioral> of entity <registoflags>.
+Parsing VHDL file "C:\Xilinx\14.7\ISE_DS\ISE\CA-Project\PerifericoSaida.vhd" into library work
+Parsing entity <PerifericoSaida>.
+Parsing architecture <Behavioral> of entity <perifericosaida>.
+Parsing VHDL file "C:\Xilinx\14.7\ISE_DS\ISE\CA-Project\PerifericoEntrada.vhd" into library work
+Parsing entity <PerifericoEntrada>.
+Parsing architecture <Behavioral> of entity <perifericoentrada>.
+Parsing VHDL file "C:\Xilinx\14.7\ISE_DS\ISE\CA-Project\PC.vhd" into library work
+Parsing entity <PC>.
+Parsing architecture <Behavioral> of entity <pc>.
+Parsing VHDL file "C:\Xilinx\14.7\ISE_DS\ISE\CA-Project\MUX_R.vhd" into library work
+Parsing entity <MUX_R>.
+Parsing architecture <Behavioral> of entity <mux_r>.
+Parsing VHDL file "C:\Xilinx\14.7\ISE_DS\ISE\CA-Project\MUX_PC.vhd" into library work
+Parsing entity <MUX_PC>.
+Parsing architecture <Behavioral> of entity <mux_pc>.
+Parsing VHDL file "C:\Xilinx\14.7\ISE_DS\ISE\CA-Project\BancoRegistos.vhd" into library work
+Parsing entity <BancoRegistos>.
+Parsing architecture <Behavioral> of entity <bancoregistos>.
+Parsing VHDL file "C:\Xilinx\14.7\ISE_DS\ISE\CA-Project\ALU.vhd" into library work
+Parsing entity <ALU>.
+Parsing architecture <Behavioral> of entity <alu>.
+Parsing VHDL file "C:\Xilinx\14.7\ISE_DS\ISE\CA-Project\Processador.vhd" into library work
+Parsing entity <Processador>.
+Parsing architecture <Struct> of entity <processador>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Processador> (architecture <Struct>) from library <work>.
+
+Elaborating entity <PerifericoEntrada> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <PerifericoSaida> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <MUX_R> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <BancoRegistos> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Xilinx\14.7\ISE_DS\ISE\CA-Project\BancoRegistos.vhd" Line 61. Case statement is complete. others clause is never selected
+
+Elaborating entity <ALU> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <PC> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ROM> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <RegistoFlags> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <MUX_PC> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Processador>.
+    Related source file is "C:\Xilinx\14.7\ISE_DS\ISE\CA-Project\Processador.vhd".
+    Summary:
+	no macro.
+Unit <Processador> synthesized.
+
+Synthesizing Unit <PerifericoEntrada>.
+    Related source file is "C:\Xilinx\14.7\ISE_DS\ISE\CA-Project\PerifericoEntrada.vhd".
+WARNING:Xst:737 - Found 1-bit latch for signal <Dados_IN<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Dados_IN<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Dados_IN<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Dados_IN<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Dados_IN<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Dados_IN<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Dados_IN<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Dados_IN<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   8 Latch(s).
+Unit <PerifericoEntrada> synthesized.
+
+Synthesizing Unit <PerifericoSaida>.
+    Related source file is "C:\Xilinx\14.7\ISE_DS\ISE\CA-Project\PerifericoSaida.vhd".
+    Found 8-bit register for signal <POUT>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <PerifericoSaida> synthesized.
+
+Synthesizing Unit <MUX_R>.
+    Related source file is "C:\Xilinx\14.7\ISE_DS\ISE\CA-Project\MUX_R.vhd".
+    Found 8-bit 4-to-1 multiplexer for signal <Dados_R> created at line 29.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX_R> synthesized.
+
+Synthesizing Unit <BancoRegistos>.
+    Related source file is "C:\Xilinx\14.7\ISE_DS\ISE\CA-Project\BancoRegistos.vhd".
+WARNING:Xst:647 - Input <ESCR_R<1:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <registos<1>>.
+    Found 8-bit register for signal <registos<2>>.
+    Found 8-bit register for signal <registos<3>>.
+    Found 8-bit register for signal <registos<4>>.
+    Found 8-bit register for signal <registos<5>>.
+    Found 8-bit register for signal <registos<6>>.
+    Found 8-bit register for signal <registos<7>>.
+    Found 8-bit register for signal <registos<0>>.
+    Found 8-bit 8-to-1 multiplexer for signal <Operando1> created at line 67.
+    Found 8-bit 8-to-1 multiplexer for signal <Operando2> created at line 68.
+    Summary:
+	inferred  64 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <BancoRegistos> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:\Xilinx\14.7\ISE_DS\ISE\CA-Project\ALU.vhd".
+    Found 8-bit adder for signal <Operando1[7]_Operando2[7]_add_1_OUT[7:0]> created at line 38.
+    Found 8-bit subtractor for signal <Operando1[7]_Operando2[7]_sub_4_OUT<7:0>[7:0]> created at line 37.
+    Found 8-bit 8-to-1 multiplexer for signal <Resultado> created at line 25.
+WARNING:Xst:737 - Found 1-bit latch for signal <E_FLAG<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <E_FLAG<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <E_FLAG<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <E_FLAG<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <E_FLAG<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 8-bit comparator greater for signal <Operando2[7]_Operando1[7]_LessThan_18_o> created at line 54
+    Found 8-bit comparator greater for signal <n0021> created at line 60
+    Found 8-bit comparator equal for signal <Operando1[7]_Operando2[7]_equal_20_o> created at line 66
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   5 Latch(s).
+	inferred   3 Comparator(s).
+	inferred   6 Multiplexer(s).
+Unit <ALU> synthesized.
+
+Synthesizing Unit <PC>.
+    Related source file is "C:\Xilinx\14.7\ISE_DS\ISE\CA-Project\PC.vhd".
+    Found 8-bit register for signal <contagem>.
+    Found 8-bit adder for signal <contagem[7]_GND_34_o_add_0_OUT> created at line 43.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <PC> synthesized.
+
+Synthesizing Unit <ROM>.
+    Related source file is "C:\Xilinx\14.7\ISE_DS\ISE\CA-Project\ROM.vhd".
+    Found 16x4-bit Read Only RAM for signal <SEL_ALU>
+    Found 16x2-bit Read Only RAM for signal <SEL_Dados>
+    Found 32x6-bit Read Only RAM for signal <_n0235>
+    Summary:
+	inferred   3 RAM(s).
+	inferred   3 Multiplexer(s).
+Unit <ROM> synthesized.
+
+Synthesizing Unit <RegistoFlags>.
+    Related source file is "C:\Xilinx\14.7\ISE_DS\ISE\CA-Project\RegistoFlags.vhd".
+WARNING:Xst:647 - Input <ESCR_R<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <S_FLAG>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <RegistoFlags> synthesized.
+
+Synthesizing Unit <MUX_PC>.
+    Related source file is "C:\Xilinx\14.7\ISE_DS\ISE\CA-Project\MUX_PC.vhd".
+WARNING:Xst:737 - Found 1-bit latch for signal <ESCR_PC>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 Latch(s).
+Unit <MUX_PC> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 16x2-bit single-port Read Only RAM                    : 1
+ 16x4-bit single-port Read Only RAM                    : 1
+ 32x6-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 2
+ 8-bit adder                                           : 1
+ 8-bit addsub                                          : 1
+# Registers                                            : 11
+ 1-bit register                                        : 1
+ 8-bit register                                        : 10
+# Latches                                              : 14
+ 1-bit latch                                           : 14
+# Comparators                                          : 3
+ 8-bit comparator equal                                : 1
+ 8-bit comparator greater                              : 2
+# Multiplexers                                         : 17
+ 1-bit 2-to-1 multiplexer                              : 6
+ 2-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 7
+ 8-bit 4-to-1 multiplexer                              : 1
+ 8-bit 8-to-1 multiplexer                              : 2
+# Xors                                                 : 2
+ 8-bit xor2                                            : 2
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <PC>.
+The following registers are absorbed into counter <contagem>: 1 register on signal <contagem>.
+Unit <PC> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ROM>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_SEL_ALU> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 4-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <opcode<3:0>>   |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <SEL_ALU>       |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_SEL_Dados> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 2-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <opcode<3:0>>   |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <SEL_Dados>     |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0235> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 6-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <opcode>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <ROM> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 16x2-bit single-port distributed Read Only RAM        : 1
+ 16x4-bit single-port distributed Read Only RAM        : 1
+ 32x6-bit single-port distributed Read Only RAM        : 1
+# Adders/Subtractors                                   : 1
+ 8-bit addsub                                          : 1
+# Counters                                             : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 73
+ Flip-Flops                                            : 73
+# Comparators                                          : 3
+ 8-bit comparator equal                                : 1
+ 8-bit comparator greater                              : 2
+# Multiplexers                                         : 30
+ 1-bit 2-to-1 multiplexer                              : 6
+ 1-bit 8-to-1 multiplexer                              : 16
+ 2-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 6
+ 8-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 2
+ 8-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <PerifericoEntrada> ...
+
+Optimizing unit <PerifericoSaida> ...
+
+Optimizing unit <Processador> ...
+
+Optimizing unit <BancoRegistos> ...
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <MUX_PC> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Processador, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 81
+ Flip-Flops                                            : 81
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Processador.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 180
+#      GND                         : 1
+#      INV                         : 1
+#      LUT3                        : 14
+#      LUT4                        : 14
+#      LUT5                        : 33
+#      LUT6                        : 64
+#      MUXCY                       : 14
+#      MUXF7                       : 23
+#      XORCY                       : 16
+# FlipFlops/Latches                : 95
+#      FDC                         : 8
+#      FDE                         : 73
+#      LD                          : 6
+#      LD_1                        : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 69
+#      IBUF                        : 36
+#      OBUF                        : 33
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              87  out of  126800     0%  
+ Number of Slice LUTs:                  126  out of  63400     0%  
+    Number used as Logic:               126  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    154
+   Number with an unused Flip Flop:      67  out of    154    43%  
+   Number with an unused LUT:            28  out of    154    18%  
+   Number of fully used LUT-FF pairs:    59  out of    154    38%  
+   Number of unique control sets:        14
+
+IO Utilization: 
+ Number of IOs:                          70
+ Number of bonded IOBs:                  70  out of    210    33%  
+    IOB Flip Flops/Latches:               8
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------------------------------------+----------------------------------+-------+
+Clock Signal                                                                 | Clock buffer(FF name)            | Load  |
+-----------------------------------------------------------------------------+----------------------------------+-------+
+clk                                                                          | BUFGP                            | 81    |
+ESCR_P(romDesc/Mmux_ESCR_P11:O)                                              | NONE(*)(perifericosIn/Dados_IN_7)| 8     |
+A_L_U/SEL_ALU[3]_SEL_ALU[3]_AND_18_o(A_L_U/SEL_ALU[3]_SEL_ALU[3]_AND_18_o1:O)| NONE(*)(A_L_U/E_FLAG_4)          | 5     |
+muxPC/GND_37_o_GND_37_o_OR_92_o(muxPC/GND_37_o_GND_37_o_OR_92_o1:O)          | NONE(*)(muxPC/ESCR_PC)           | 1     |
+-----------------------------------------------------------------------------+----------------------------------+-------+
+(*) These 3 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.054ns (Maximum Frequency: 327.439MHz)
+   Minimum input arrival time before clock: 3.392ns
+   Maximum output required time after clock: 1.623ns
+   Maximum combinational path delay: 1.498ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.054ns (frequency: 327.439MHz)
+  Total number of paths / destination ports: 8292 / 80
+-------------------------------------------------------------------------
+Delay:               3.054ns (Levels of Logic = 12)
+  Source:            bancoReg/registos_6_0 (FF)
+  Destination:       bancoReg/registos_7_7 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: bancoReg/registos_6_0 to bancoReg/registos_7_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.361   0.561  bancoReg/registos_6_0 (bancoReg/registos_6_0)
+     LUT6:I2->O            1   0.097   0.000  bancoReg/mux8_3 (bancoReg/mux8_3)
+     MUXF7:I1->O           5   0.279   0.398  bancoReg/mux8_2_f7 (oper2<0>)
+     LUT5:I3->O            1   0.097   0.000  A_L_U/Mmux_Resultado1_rs_lut<0> (A_L_U/Mmux_Resultado1_rs_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  A_L_U/Mmux_Resultado1_rs_cy<0> (A_L_U/Mmux_Resultado1_rs_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  A_L_U/Mmux_Resultado1_rs_cy<1> (A_L_U/Mmux_Resultado1_rs_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  A_L_U/Mmux_Resultado1_rs_cy<2> (A_L_U/Mmux_Resultado1_rs_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  A_L_U/Mmux_Resultado1_rs_cy<3> (A_L_U/Mmux_Resultado1_rs_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  A_L_U/Mmux_Resultado1_rs_cy<4> (A_L_U/Mmux_Resultado1_rs_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  A_L_U/Mmux_Resultado1_rs_cy<5> (A_L_U/Mmux_Resultado1_rs_cy<5>)
+     MUXCY:CI->O           0   0.023   0.000  A_L_U/Mmux_Resultado1_rs_cy<6> (A_L_U/Mmux_Resultado1_rs_cy<6>)
+     XORCY:CI->O           1   0.370   0.295  A_L_U/Mmux_Resultado1_rs_xor<7> (A_L_U/Mmux_Resultado1_split<7>)
+     LUT6:I5->O            8   0.097   0.000  muxR/Mmux_Dados_R83 (Dados_R<7>)
+     FDE:D                     0.008          bancoReg/registos_3_7
+    ----------------------------------------
+    Total                      3.054ns (1.800ns logic, 1.254ns route)
+                                       (58.9% logic, 41.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 9829 / 162
+-------------------------------------------------------------------------
+Offset:              2.895ns (Levels of Logic = 13)
+  Source:            SEL_R<4> (PAD)
+  Destination:       bancoReg/registos_7_7 (FF)
+  Destination Clock: clk rising
+
+  Data Path: SEL_R<4> to bancoReg/registos_7_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   0.001   0.762  SEL_R_4_IBUF (SEL_R_4_IBUF)
+     LUT6:I0->O            1   0.097   0.000  bancoReg/mux8_3 (bancoReg/mux8_3)
+     MUXF7:I1->O           5   0.279   0.398  bancoReg/mux8_2_f7 (oper2<0>)
+     LUT5:I3->O            1   0.097   0.000  A_L_U/Mmux_Resultado1_rs_lut<0> (A_L_U/Mmux_Resultado1_rs_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  A_L_U/Mmux_Resultado1_rs_cy<0> (A_L_U/Mmux_Resultado1_rs_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  A_L_U/Mmux_Resultado1_rs_cy<1> (A_L_U/Mmux_Resultado1_rs_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  A_L_U/Mmux_Resultado1_rs_cy<2> (A_L_U/Mmux_Resultado1_rs_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  A_L_U/Mmux_Resultado1_rs_cy<3> (A_L_U/Mmux_Resultado1_rs_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  A_L_U/Mmux_Resultado1_rs_cy<4> (A_L_U/Mmux_Resultado1_rs_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  A_L_U/Mmux_Resultado1_rs_cy<5> (A_L_U/Mmux_Resultado1_rs_cy<5>)
+     MUXCY:CI->O           0   0.023   0.000  A_L_U/Mmux_Resultado1_rs_cy<6> (A_L_U/Mmux_Resultado1_rs_cy<6>)
+     XORCY:CI->O           1   0.370   0.295  A_L_U/Mmux_Resultado1_rs_xor<7> (A_L_U/Mmux_Resultado1_split<7>)
+     LUT6:I5->O            8   0.097   0.000  muxR/Mmux_Dados_R83 (Dados_R<7>)
+     FDE:D                     0.008          bancoReg/registos_3_7
+    ----------------------------------------
+    Total                      2.895ns (1.440ns logic, 1.455ns route)
+                                       (49.7% logic, 50.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ESCR_P'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              0.280ns (Levels of Logic = 1)
+  Source:            PIN<7> (PAD)
+  Destination:       perifericosIn/Dados_IN_7 (LATCH)
+  Destination Clock: ESCR_P rising
+
+  Data Path: PIN<7> to perifericosIn/Dados_IN_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.279  PIN_7_IBUF (PIN_7_IBUF)
+     LD_1:D                   -0.028          perifericosIn/Dados_IN_7
+    ----------------------------------------
+    Total                      0.280ns (0.001ns logic, 0.279ns route)
+                                       (0.4% logic, 99.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'A_L_U/SEL_ALU[3]_SEL_ALU[3]_AND_18_o'
+  Total number of paths / destination ports: 520 / 5
+-------------------------------------------------------------------------
+Offset:              3.392ns (Levels of Logic = 6)
+  Source:            SEL_R<1> (PAD)
+  Destination:       A_L_U/E_FLAG_0 (LATCH)
+  Destination Clock: A_L_U/SEL_ALU[3]_SEL_ALU[3]_AND_18_o falling
+
+  Data Path: SEL_R<1> to A_L_U/E_FLAG_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            24   0.001   0.796  SEL_R_1_IBUF (SEL_R_1_IBUF)
+     LUT6:I0->O            1   0.097   0.000  bancoReg/mux5_3 (bancoReg/mux5_3)
+     MUXF7:I1->O           8   0.279   0.725  bancoReg/mux5_2_f7 (Operando1_5_OBUF)
+     LUT6:I0->O            2   0.097   0.688  A_L_U/Operando2[7]_Operando1[7]_LessThan_19_o111 (A_L_U/Operando2[7]_Operando1[7]_LessThan_19_o11)
+     LUT5:I0->O            2   0.097   0.515  A_L_U/Operando1[7]_Operando2[7]_LessThan_21_o1 (A_L_U/Operando1[7]_Operando2[7]_LessThan_21_o1)
+     LUT3:I0->O            1   0.097   0.000  A_L_U/Operando1[7]_Operando2[7]_LessThan_21_o2 (A_L_U/Operando1[7]_Operando2[7]_LessThan_21_o)
+     LD:D                     -0.028          A_L_U/E_FLAG_3
+    ----------------------------------------
+    Total                      3.392ns (0.668ns logic, 2.724ns route)
+                                       (19.7% logic, 80.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'muxPC/GND_37_o_GND_37_o_OR_92_o'
+  Total number of paths / destination ports: 65 / 1
+-------------------------------------------------------------------------
+Offset:              2.789ns (Levels of Logic = 5)
+  Source:            SEL_R<1> (PAD)
+  Destination:       muxPC/ESCR_PC (LATCH)
+  Destination Clock: muxPC/GND_37_o_GND_37_o_OR_92_o falling
+
+  Data Path: SEL_R<1> to muxPC/ESCR_PC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            24   0.001   0.796  SEL_R_1_IBUF (SEL_R_1_IBUF)
+     LUT6:I0->O            1   0.097   0.000  bancoReg/mux7_3 (bancoReg/mux7_3)
+     MUXF7:I1->O          11   0.279   0.740  bancoReg/mux7_2_f7 (Operando1_7_OBUF)
+     LUT6:I0->O            1   0.097   0.683  muxPC/ESCR_PC_zero_MUX_175_o2 (muxPC/ESCR_PC_zero_MUX_175_o2)
+     LUT5:I0->O            1   0.097   0.000  muxPC/ESCR_PC_zero_MUX_175_o3 (muxPC/ESCR_PC_zero_MUX_175_o)
+     LD:D                     -0.028          muxPC/ESCR_PC
+    ----------------------------------------
+    Total                      2.789ns (0.571ns logic, 2.218ns route)
+                                       (20.5% logic, 79.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 80 / 24
+-------------------------------------------------------------------------
+Offset:              1.623ns (Levels of Logic = 3)
+  Source:            bancoReg/registos_6_7 (FF)
+  Destination:       Operando1<7> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: bancoReg/registos_6_7 to Operando1<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.361   0.561  bancoReg/registos_6_7 (bancoReg/registos_6_7)
+     LUT6:I2->O            1   0.097   0.000  bancoReg/mux7_3 (bancoReg/mux7_3)
+     MUXF7:I1->O          11   0.279   0.326  bancoReg/mux7_2_f7 (Operando1_7_OBUF)
+     OBUF:I->O                 0.000          Operando1_7_OBUF (Operando1<7>)
+    ----------------------------------------
+    Total                      1.623ns (0.737ns logic, 0.886ns route)
+                                       (45.4% logic, 54.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 53 / 17
+-------------------------------------------------------------------------
+Delay:               1.498ns (Levels of Logic = 4)
+  Source:            SEL_R<1> (PAD)
+  Destination:       Operando1<7> (PAD)
+
+  Data Path: SEL_R<1> to Operando1<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            24   0.001   0.796  SEL_R_1_IBUF (SEL_R_1_IBUF)
+     LUT6:I0->O            1   0.097   0.000  bancoReg/mux1_3 (bancoReg/mux1_3)
+     MUXF7:I1->O          11   0.279   0.326  bancoReg/mux1_2_f7 (Operando1_1_OBUF)
+     OBUF:I->O                 0.000          Operando1_1_OBUF (Operando1<1>)
+    ----------------------------------------
+    Total                      1.498ns (0.377ns logic, 1.121ns route)
+                                       (25.2% logic, 74.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock A_L_U/SEL_ALU[3]_SEL_ALU[3]_AND_18_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    3.517|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+------------------------------------+---------+---------+---------+---------+
+                                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------+---------+---------+---------+---------+
+A_L_U/SEL_ALU[3]_SEL_ALU[3]_AND_18_o|         |    1.803|         |         |
+ESCR_P                              |    2.175|         |         |         |
+clk                                 |    3.054|         |         |         |
+muxPC/GND_37_o_GND_37_o_OR_92_o     |         |    1.986|         |         |
+------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock muxPC/GND_37_o_GND_37_o_OR_92_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.914|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.00 secs
+ 
+--> 
+
+Total memory usage is 451960 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   16 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

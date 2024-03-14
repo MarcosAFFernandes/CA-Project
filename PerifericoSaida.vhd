@@ -33,8 +33,10 @@ begin
 
 	process(ESCR_P, Operando1, clk)
 	begin
-		if ESCR_P = '1' and rising_edge(clk) then 
-			POUT <= Operando1;
+		if ESCR_P = '1' then
+			if rising_edge(clk) then 
+				POUT <= Operando1;
+			end if;
 		end if;
 	end process;
 	
